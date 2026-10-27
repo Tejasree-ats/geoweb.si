@@ -14,7 +14,7 @@ export function AboutPage() {
     <div className="inner-page about-page">
       <section className="about-intro section-shell">
         <div className="about-intro__copy" data-reveal>
-          <p className="running-label">Studio · Slovenia, collaborating everywhere</p>
+          <p className="running-label">Studio · Buhari Buildings, Chennai</p>
           <TypographyH1>Thoughtful by<br /><em>construction.</em></TypographyH1>
           <p>GeoWeb is an independent digital consultancy that brings software, design, and digital growth into the same conversation.</p>
         </div>

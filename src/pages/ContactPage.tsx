@@ -71,8 +71,8 @@ export function ContactPage() {
           <p className="running-label">Contact · Let’s begin with a question</p>
           <TypographyH1>Tell us the<br /><em>interesting bit.</em></TypographyH1>
           <p>What are you trying to make happen? A few lines is enough to find a good place to start.</p>
-          <a className="contact-email" href="mailto:hello@geoweb.si"><Mail aria-hidden="true" size={17} /> hello@geoweb.si <ArrowUpRight aria-hidden="true" size={15} /></a>
-          <div className="contact-coordinates"><span><MapPin aria-hidden="true" size={15} /> Slovenia · working everywhere</span><span className="contact-coordinates__line" aria-hidden="true" /><span>46°03′ N&nbsp; / &nbsp;14°30′ E</span></div>
+          <a className="contact-email" href="mailto:geowebc@gmail.com"><Mail aria-hidden="true" size={17} /> geowebc@gmail.com <ArrowUpRight aria-hidden="true" size={15} /></a>
+          <div className="contact-coordinates"><span><MapPin aria-hidden="true" size={15} /> Buhari Buildings, Chennai</span><span className="contact-coordinates__line" aria-hidden="true" /><span>Office · 13°04′ N&nbsp; / &nbsp;80°16′ E</span></div>
         </div>
 
         <div className="contact-form-wrap" data-reveal>
