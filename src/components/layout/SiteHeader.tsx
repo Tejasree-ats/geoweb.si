@@ -21,7 +21,7 @@ export function SiteHeader() {
 
   return (
     <header className="site-header">
-      <Link className="wordmark" to="/" aria-label="GeoWeb home">
+      <Link className="wordmark" to="/" aria-label="GeoWeb Consultancy home">
         <span className="wordmark__name">geoweb</span>
         <span className="wordmark__dot" aria-hidden="true">.</span>
         <span className="wordmark__suffix">si</span>
@@ -44,35 +44,52 @@ export function SiteHeader() {
 
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
-          <Button className="mobile-menu-trigger hidden max-[650px]:!inline-grid" size="icon" variant="ghost" aria-label="Open navigation">
-            <Menu size={21} aria-hidden="true" />
+          <Button
+            className="mobile-menu-trigger"
+            size="icon"
+            variant="ghost"
+            aria-label="Open navigation menu"
+          >
+            <Menu size={22} aria-hidden="true" />
           </Button>
         </SheetTrigger>
         <SheetContent side="right" className="mobile-sheet" showCloseButton>
           <div className="mobile-sheet__intro">
-            <SheetTitle className="mobile-sheet__title">Move with direction.</SheetTitle>
-            <SheetDescription>Independent digital studio · Slovenia</SheetDescription>
+            <SheetTitle className="mobile-sheet__title">GeoWeb Consultancy</SheetTitle>
+            <SheetDescription className="mobile-sheet__description">
+              Technology Meets Business Growth
+            </SheetDescription>
           </div>
           <nav aria-label="Mobile navigation" className="mobile-sheet__nav">
             {navigation.map((item, index) => (
               <NavLink
-                className="mobile-nav-link"
+                className={({ isActive }) =>
+                  `mobile-nav-link${isActive ? ' is-active' : ''}`
+                }
                 key={item.href}
                 onClick={() => setOpen(false)}
                 to={item.href}
               >
                 <span className="mobile-nav-link__number">0{index + 1}</span>
-                {item.label}
+                <span className="mobile-nav-link__label">{item.label}</span>
                 <ArrowUpRight aria-hidden="true" size={18} />
               </NavLink>
             ))}
-            <NavLink className="mobile-nav-link mobile-nav-link--contact" onClick={() => setOpen(false)} to="/contact">
+            <NavLink
+              className={({ isActive }) =>
+                `mobile-nav-link mobile-nav-link--contact${isActive ? ' is-active' : ''}`
+              }
+              onClick={() => setOpen(false)}
+              to="/contact"
+            >
               <span className="mobile-nav-link__number">04</span>
-              Contact
+              <span className="mobile-nav-link__label">Contact</span>
               <ArrowUpRight aria-hidden="true" size={18} />
             </NavLink>
           </nav>
-          <p className="mobile-sheet__footnote">Good things start with a conversation.</p>
+          <p className="mobile-sheet__footnote">
+            Practical technology & strategic business growth.
+          </p>
         </SheetContent>
       </Sheet>
     </header>

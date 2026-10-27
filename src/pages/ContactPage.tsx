@@ -12,10 +12,15 @@ type InquiryErrors = Partial<Record<keyof InquiryFields, string>>
 
 const initialFields: InquiryFields = { name: '', email: '', message: '' }
 const interestLabels: Record<string, string> = {
-  'ai-software': 'AI-native software',
-  websites: 'Website design & development',
-  'digital-marketing': 'Digital marketing',
-  'social-media': 'Social media',
+  'it-ai-digital': 'IT, AI & Digital Technology',
+  'websites-marketing': 'Websites, Social Media & Digital Marketing',
+  'business-development': 'Business Development & Administration',
+  'real-estate-hospitality': 'Real Estate, Hospitality & Tourism',
+  'food-events-community': 'Food Marketing, Events & Community Initiatives',
+  'ai-software': 'IT, AI & Digital Technology',
+  websites: 'Websites, Social Media & Digital Marketing',
+  'digital-marketing': 'Digital Marketing',
+  'social-media': 'Social Media & Digital Marketing',
 }
 
 function validate(values: InquiryFields): InquiryErrors {

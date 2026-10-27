@@ -48,19 +48,25 @@ export function OrreryHero() {
       <div className="hero-grid-mark" aria-hidden="true" />
       <div className="hero-axis hero-axis--one" aria-hidden="true" />
       <div className="hero-axis hero-axis--two" aria-hidden="true" />
-      <div className="hero-coordinate" data-hero-caption aria-hidden="true">
-        <span>GEOWEB / 46°03′ N</span>
-        <span>DESIGNED IN SLOVENIA</span>
-      </div>
       <div className="orrery-hero__copy">
-        <p className="hero-overline" data-hero-copy><span className="live-dot" /> Independent digital studio</p>
-        <TypographyH1 id="home-title" data-hero-copy>Digital,<br /><em>with direction.</em></TypographyH1>
-        <p className="hero-summary" data-hero-copy>We build AI-native software and digital experiences that bring good ideas into focus.</p>
+        <p className="hero-overline" data-hero-copy>
+          <span className="live-dot" /> GeoWeb Consultancy
+        </p>
+        <TypographyH1 id="home-title" data-hero-copy>
+          <span className="hero-brand-kicker">GeoWeb Consultancy —</span>
+          Technology Meets<br />
+          <em>Business Growth.</em>
+        </TypographyH1>
+        <p className="hero-summary" data-hero-copy>
+          GeoWeb Consultancy helps businesses, entrepreneurs, and organisations grow through technology, digital innovation, and strategic business support. From AI-powered solutions and website development to digital marketing, business administration, real estate, hospitality, tourism, food marketing, and community initiatives, we connect ideas with practical solutions that create meaningful impact.
+        </p>
         <div className="hero-actions" data-hero-copy>
           <Button asChild className="pill-button pill-button--gold">
-            <Link to="/contact">Make a move <ArrowUpRight aria-hidden="true" size={16} /></Link>
+            <Link to="/contact">Work with us <ArrowUpRight aria-hidden="true" size={16} /></Link>
           </Button>
-          <Link className="text-link hero-secondary" to="/work">Explore the work <ArrowDown aria-hidden="true" size={15} /></Link>
+          <a className="text-link hero-secondary" href="#services">
+            Explore our services <ArrowDown aria-hidden="true" size={15} />
+          </a>
         </div>
       </div>
       <div className="hero-instrument" data-hero-caption aria-hidden="true">
